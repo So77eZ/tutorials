@@ -2,7 +2,7 @@
 // 1 урок
 
 
-// "use strict";
+"use strict";
 
 // let something = 15;
 // console.log(something);
@@ -70,23 +70,50 @@
 
 //13 урок. Условия.
 
-"use strict";
+
 
 // if (4 == 4) {
 //     console.log("Ну ты даешь!!!");
 // } else {
 //     console.log("Fuck it");
 // }
+//
+// const num = +prompt("Type any number here");
+// // const num = 50;
+// // if (num < 49) {
+// //     console.log("num is less than server number");
+// //     alert("num is less than server number");
+// // } else if (num == 50) {
+// //     console.log("num is equal to server number, congrats");
+// //     alert("num is equal to server number, congrats");
+// // } else {
+// //     console.log("num is more than server number");
+// //     alert("num is more than server number");
+// // }
 
-const num = +prompt("Type any number here");
+// // (num === 50) 
+// // ? console.log("num is equal to server number, congrats?")
+// // : console.log("number isn't equal to our score");
 
-if (num < 49) {
-    console.log("num is less than server number");
-    alert("num is less than server number");
-} else if (num == 50) {
-    console.log("num is equal to server number, congrats");
-    alert("num is equal to server number, congrats");
-} else {
-    console.log("num is more than server number");
-    alert("num is more than server number");
-}
+
+// switch (num) {
+//     case 69:
+//         console.log("Wrong, u horny bastard!");
+//         alert("Wrong, u horny bastard!");
+//         break;
+//     case 100:    
+//         console.log("No no no");
+//         alert("No no no");
+//         break;
+//     case 1:    
+//         console.log("That's not that easy as u think");
+//         alert("That's not that easy as u think");
+//         break;   
+//     case 50:
+//         console.log("Yeah, u right");
+//         alert("U goddamn right");
+//         break;
+//     default:
+//         console.log("Not this time!");
+//         alert("Not this time!");
+// }
