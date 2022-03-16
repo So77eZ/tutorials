@@ -43,5 +43,27 @@
 
 // "use sctrict";
 
-console.log(`Я`); console.log(`Учу`);
-console.log(`Джава скрипт епта`);
+// console.log(`Я`); console.log(`Учу`);
+// console.log(`Джава скрипт епта`);
+
+//12 урок. Практика, делаем какое-то приложение.
+
+//1 task
+const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?") ;
+
+//2 task
+let personalMovieDB = {
+    count: nubmberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+
+//3 task
+const lastSeenMovie = prompt('Какой фильм вы смотрели в последний раз?'),
+lastSeenMovieScore = prompt('На сколько его оцените?');
+
+personalMovieDB.movies[lastSeenMovie] = lastSeenMovieScore;
+
+console.log(personalMovieDB);
