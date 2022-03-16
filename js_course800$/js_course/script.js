@@ -46,24 +46,47 @@
 // console.log(`Я`); console.log(`Учу`);
 // console.log(`Джава скрипт епта`);
 
-//12 урок. Практика, делаем какое-то приложение.
+////12 урок. Практика, делаем какое-то приложение.
+//
+// //1 task
+// const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?") ;
+//
+// //2 task
+// let personalMovieDB = {
+//     count: nubmberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     private: false
+// };
 
-//1 task
-const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?") ;
+// //3 task
+// const lastSeenMovie = prompt('Какой фильм вы смотрели в последний раз?'),
+// lastSeenMovieScore = prompt('На сколько его оцените?');
 
-//2 task
-let personalMovieDB = {
-    count: nubmberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false
-};
+// personalMovieDB.movies[lastSeenMovie] = lastSeenMovieScore;
 
-//3 task
-const lastSeenMovie = prompt('Какой фильм вы смотрели в последний раз?'),
-lastSeenMovieScore = prompt('На сколько его оцените?');
+// console.log(personalMovieDB);
 
-personalMovieDB.movies[lastSeenMovie] = lastSeenMovieScore;
+//13 урок. Условия.
 
-console.log(personalMovieDB);
+"use strict";
+
+// if (4 == 4) {
+//     console.log("Ну ты даешь!!!");
+// } else {
+//     console.log("Fuck it");
+// }
+
+const num = +prompt("Type any number here");
+
+if (num < 49) {
+    console.log("num is less than server number");
+    alert("num is less than server number");
+} else if (num == 50) {
+    console.log("num is equal to server number, congrats");
+    alert("num is equal to server number, congrats");
+} else {
+    console.log("num is more than server number");
+    alert("num is more than server number");
+}
