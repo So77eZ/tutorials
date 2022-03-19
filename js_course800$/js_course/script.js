@@ -117,3 +117,27 @@
 //         console.log("Not this time!");
 //         alert("Not this time!");
 // }
+//14 урок. Циклы.
+
+let num = 50;
+// // 1 way
+// while (num >= 45) {
+//     console.log(num);
+//     num--;
+// }
+
+// 2 way
+// do {
+//     console.log(num);
+//     num--;
+// }
+// while (num >= 45 );
+
+// 3 way
+for (let i = 0; i <= 50; i++) {
+    if (i === 6){
+        //break; // скипнет весь цикл когда i === 6
+        continue; // скипнет 6ку 
+    }
+    console.log(num++);
+}
