@@ -117,27 +117,63 @@
 //         console.log("Not this time!");
 //         alert("Not this time!");
 // }
-//14 урок. Циклы.
+// //14 урок. Циклы.
 
-let num = 50;
-// // 1 way
-// while (num >= 45) {
-//     console.log(num);
-//     num--;
+// let num = 50;
+// // // 1 way
+// // while (num >= 45) {
+// //     console.log(num);
+// //     num--;
+// // }
+
+// // 2 way
+// // do {
+// //     console.log(num);
+// //     num--;
+// // }
+// // while (num >= 45 );
+
+// // 3 way
+// for (let i = 0; i <= 50; i++) {
+//     if (i === 6){
+//         //break; // скипнет весь цикл когда i === 6
+//         continue; // скипнет 6ку 
+//     }
+//     console.log(num++);
 // }
 
-// 2 way
-// do {
-//     console.log(num);
-//     num--;
-// }
-// while (num >= 45 );
+//15 урок. Циклы.
+const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
-// 3 way
-for (let i = 0; i <= 50; i++) {
-    if (i === 6){
-        //break; // скипнет весь цикл когда i === 6
-        continue; // скипнет 6ку 
+let personalMovieDB = {
+    count: nubmberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Один из недавно просмотренных фильмов?"),
+        b = prompt("На сколько его оцените?");
+
+
+    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log("done");
+    } else {
+        console.log("error");
+        i--;
     }
-    console.log(num++);
 }
+
+if (personalMovieDB.count < 10) {
+    prompt("Малова-то фильмов будет");
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+    prompt("Ну нормас так фильмов насмотрелся, четка!");
+} else if (personalMovieDB.count > 30) {
+    prompt("Че, дохуя киноман!?, красава!");
+} else {
+    prompt("Что-то пошло не так");
+}
+console.log(personalMovieDB);
