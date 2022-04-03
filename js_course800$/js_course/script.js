@@ -142,38 +142,95 @@
 //     console.log(num++);
 // }
 
-//15 урок. Циклы.
-const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
+// //15 урок. Циклы.
+// const nubmberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
-let personalMovieDB = {
-    count: nubmberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false
+// let personalMovieDB = {
+//     count: nubmberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     private: false
+// };
+
+// for (let i = 0; i < 2; i++) {
+//     const a = prompt("Один из недавно просмотренных фильмов?"),
+//         b = prompt("На сколько его оцените?");
+
+
+//     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log("done");
+//     } else {
+//         console.log("error");
+//         i--;
+//     }
+// }
+
+// if (personalMovieDB.count < 10) {
+//     prompt("Малова-то фильмов будет");
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     prompt("Ну нормас так фильмов насмотрелся, четка!");
+// } else if (personalMovieDB.count > 30) {
+//     prompt("Че, дохуя киноман!?, красава!");
+// } else {
+//     prompt("Что-то пошло не так");
+// }
+// console.log(personalMovieDB);
+
+
+// урок 16 Функции
+
+let num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    num = 20;
+}
+
+showFirstMessage("Hellow World");
+console.log(num);
+
+// function calc(a, b, c) {
+//     if (c == "+") {
+//         return (a + b);
+//     }
+//     else if(c == "-") {
+//         return (a - b);
+//     }
+//     else if(c == "*") {
+//         return (a * b);
+//     }
+//     else if(c == "/") {
+//         return (a / b);
+//     }
+//     else if(c == "//" || c == "%") {
+//         return (a % b);
+//     }
+//     else{
+//         return("Error");
+//     }
+// }
+// console.log(calc(5, 10, "*"));
+
+// 1 тип функций - function declaration - globalnaya
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+function ret() {
+    let num = "1 тип";
+    return num;
+}
+
+// 2 тип функций - function expression - localnaya
+
+const logger = function () {
+    console.log("2 тип");
 };
 
-for (let i = 0; i < 2; i++) {
-    const a = prompt("Один из недавно просмотренных фильмов?"),
-        b = prompt("На сколько его оцените?");
+logger();
 
+// 3 тип функций - ES6 - стрелочная
 
-    if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-        personalMovieDB.movies[a] = b;
-        console.log("done");
-    } else {
-        console.log("error");
-        i--;
-    }
-}
-
-if (personalMovieDB.count < 10) {
-    prompt("Малова-то фильмов будет");
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-    prompt("Ну нормас так фильмов насмотрелся, четка!");
-} else if (personalMovieDB.count > 30) {
-    prompt("Че, дохуя киноман!?, красава!");
-} else {
-    prompt("Что-то пошло не так");
-}
-console.log(personalMovieDB);
+const calc = (a, b) => a + b;
