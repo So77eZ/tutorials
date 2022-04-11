@@ -181,20 +181,20 @@
 
 // урок 16 Функции
 
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    num = 20;
-}
+// function showFirstMessage(text) {
+//     console.log(text);
+//     num = 20;
+// }
 
-showFirstMessage("Hellow World");
-console.log(num);
+// showFirstMessage("Hellow World");
+// console.log(num);
 
 // function calc(a, b, c) {
-//     if (c == "+") {
-//         return (a + b);
-//     }
+//        if (c == "+") {
+//            return (a + b);  
+//        }          
 //     else if(c == "-") {
 //         return (a - b);
 //     }
@@ -213,24 +213,55 @@ console.log(num);
 // }
 // console.log(calc(5, 10, "*"));
 
-// 1 тип функций - function declaration - globalnaya
+// // 1 тип функций - function declaration - globalnaya
 
-const anotherNum = ret();
-console.log(anotherNum);
+// const anotherNum = ret();
+// console.log(anotherNum);
 
-function ret() {
-    let num = "1 тип";
-    return num;
-}
+// function ret() {
+//     let num = "1 тип";
+//     return num;
+// }
 
-// 2 тип функций - function expression - localnaya
+// // 2 тип функций - function expression - localnaya
 
-const logger = function () {
-    console.log("2 тип");
-};
+// const logger = function () {
+//     console.log("2 тип");
+// };
 
-logger();
+// logger();
 
-// 3 тип функций - ES6 - стрелочная
+// // 3 тип функций - ES6 - стрелочная
 
-const calc = (a, b) => a + b;
+// const calc = (a, b) => a + b;
+
+// console.log(calc(2,3));
+
+
+// урок 17. Методы и свойства строк и чисел
+
+let text = "Миша никак не может разобраться в себе";
+let fullAddress = [`Sweden`, `Stockholm`, `Storgatan`, 52];
+
+console.log(text.length); 
+console.log(fullAddress.length);
+console.log(text.toUpperCase()); 
+console.log(text.toLowerCase()); 
+
+const fruit = "Some fruit";
+
+console.log(fruit.indexOf("fruit"));
+
+const logg = "Hello world";
+
+console.log(logg.slice(-11,-6));
+console.log(logg.slice(6));
+console.log(logg.substring(6,11));
+console.log(logg.substr(0,5));
+
+const num = 12.2;
+console.log(Math.round(num));
+
+const test = "12.2px";
+console.log(parseInt(test));
+console.log(parseFloat(test));
