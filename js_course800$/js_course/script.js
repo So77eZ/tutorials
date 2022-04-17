@@ -266,3 +266,5 @@ const test = "12.25454px";
 console.log(parseInt(test));
 console.log(parseFloat(test));
 //
+// bozhe praviy 4to takoe a
+//
