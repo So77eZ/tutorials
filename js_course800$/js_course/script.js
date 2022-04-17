@@ -265,3 +265,4 @@ console.log(Math.round(num));
 const test = "12.25454px";
 console.log(parseInt(test));
 console.log(parseFloat(test));
+//
