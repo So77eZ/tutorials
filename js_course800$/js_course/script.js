@@ -243,21 +243,21 @@
 let text = "Миша никак не может разобраться в себе";
 let fullAddress = [`Sweden`, `Stockholm`, `Storgatan`, 52];
 
-console.log(text.length); 
+console.log(text.length);
 console.log(fullAddress.length);
-console.log(text.toUpperCase()); 
-console.log(text.toLowerCase()); 
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
 
 const fruit = "Some fruit";
 
 console.log(fruit.indexOf("fruit"));
 
-const logg = "Hello world";
+const logg = "Hello intresting world";
 
-console.log(logg.slice(-11,-6));
+console.log(logg.slice(-11, -6));
 console.log(logg.slice(6));
-console.log(logg.substring(6,11));
-console.log(logg.substr(0,5));
+console.log(logg.substring(6, 11));
+console.log(logg.substr(0, 5));
 
 const num = 12.2;
 console.log(Math.round(num));
