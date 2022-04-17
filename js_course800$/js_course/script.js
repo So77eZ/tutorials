@@ -270,3 +270,4 @@ console.log(parseFloat(test));
 // eshe raz probuyu ua shas ymry
 // eshe raz probuyu ua shas ymry 2
 // eshe raz probuyu ua shas ymry 3
+// eshe raz probuyu ua shas ymry 4
