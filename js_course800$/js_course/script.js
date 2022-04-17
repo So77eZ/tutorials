@@ -268,4 +268,5 @@ console.log(parseFloat(test));
 //
 // bozhe praviy 4to takoe a
 // eshe raz probuyu ua shas ymry
+// eshe raz probuyu ua shas ymry 2
 //
