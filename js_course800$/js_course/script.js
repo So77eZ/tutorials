@@ -238,36 +238,109 @@
 // console.log(calc(2,3));
 
 
-// урок 17. Методы и свойства строк и чисел
+// // урок 28. Методы и свойства строк и чисел
 
-let text = "Миша никак не может разобраться в себе";
-let fullAddress = [`Sweden`, `Stockholm`, `Storgatan`, 52];
+// let text = "Миша никак не может разобраться в себе";
+// let fullAddress = [`Sweden`, `Stockholm`, `Storgatan`, 52];
 
-console.log(text.length);
-console.log(fullAddress.length);
-console.log(text.toUpperCase());
-console.log(text.toLowerCase());
+// console.log(text.length);
+// console.log(fullAddress.length);
+// console.log(text.toUpperCase());
+// console.log(text.toLowerCase());
 
-const fruit = "Some fruit";
+// const fruit = "Some fruit";
 
-console.log(fruit.indexOf("fruit"));
+// console.log(fruit.indexOf("fruit"));
 
-const logg = "Hello intresting world";
+// const logg = "Hello intresting world";
 
-console.log(logg.slice(-11, -6));
-console.log(logg.slice(6));
-console.log(logg.substring(6, 11));
-console.log(logg.substr(0, 5));
+// console.log(logg.slice(-11, -6));
+// console.log(logg.slice(6));
+// console.log(logg.substring(6, 11));
+// console.log(logg.substr(0, 5));
 
-const num = 12.22222;
-console.log(Math.round(num));
+// const num = 12.22222;
+// console.log(Math.round(num));
 
-const test = "12.25454px";
-console.log(parseInt(test));
-console.log(parseFloat(test));
-//
-// bozhe praviy 4to takoe a
-// eshe raz probuyu ua shas ymry
-// eshe raz probuyu ua shas ymry 2
-// eshe raz probuyu ua shas ymry 3
-// eshe raz probuyu ua shas ymry 4
+// const test = "12.25454px";
+// console.log(parseInt(test));
+// console.log(parseFloat(test));
+
+
+
+// // урок 18.
+
+// let x = "ubunty";
+// x = "udemy";
+// console.log("я в", x);
+
+// console.log(5 === 5 && 3 > 1 || 5);
+
+// // Место для первой задачи
+// for (let x = 5; x < 11; x++) {
+//     console.log(x);
+// }
+// // Место для второй задачи
+// for (let i = 20; i > 9; i--) {
+//     if (i == 13) { break; }
+//     console.log(i);
+// }
+// // Место для третьей задачи
+// for (let j = 2; j < 11; j++) {
+//     if (j % 2 == 0) {
+//         console.log(j);
+//         continue;
+//     }
+// }
+// // Место для четвертой задачи
+// // Цикл, который нужно переписать:
+
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+// let x = 1;
+// while (x <= 15) {
+//     x++;
+//     if (x % 2) {
+//         console.log(x);
+//     }
+// }
+// // Место для пятой задачи
+// const arrayOfNumbers = [5];
+// for (let i = 0; i < 6; i++) {
+//     for (let j = 0; j < i; j++) {
+//         arrayOfNumbers[i] = j + 6;
+//     }
+// }
+// console.log(arrayOfNumbers);
+// // 6 задача 
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+// const result = [];
+// let x = 0;
+// while (x < arr.length) {
+//     result[x] = arr[x];
+//     x++;
+// }
+// console.log(result);
+// //7 задача
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// for (let x = 0; x < 5; x++) {
+//     if (typeof(data[x]) === "number") {
+//         data[x] = data[x] * 2;
+//     } else {
+//         data[x] = data[x] + " - done";
+//     }
+// }
+// console.log(data);
+//8 задача
+// const data = [5, 10, 'Shopping', 20, 'Homework'];
+// const result = [];
+// for (let i = 1; i <= data.length; i++) {
+//     result[i - 1] = data[data.length - i];
+// }
+// console.log(result);
