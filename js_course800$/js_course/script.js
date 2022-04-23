@@ -344,25 +344,52 @@
 //     result[i - 1] = data[data.length - i];
 // }
 // console.log(result);
-//9 задача
-const lines = 5;
-let result = '';
-for (let i = 0; i <= lines; i++) {
-    for (let j = 0; j < lines - i; j++) {
-        result += " ";
-    }
-    for (let j = 0; j < 1; j++) {
-        result += "|";
-    }
-    for (let j = 0; j < 2 * i + 1; j++) {
-        result += "*";
-    }
-    for (let j = 0; j < 1; j++) {
-        result += '|';
-    }
-    for (let j = 0; j < lines - i; j++) {
-        result += " ";
-    }
-    result += "\n";
-}
-console.log(result);
+// //9 задача
+// const lines = 5;
+// let result = '';
+// for (let i = 0; i <= lines; i++) {
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 1; j++) {
+//         result += "|";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     for (let j = 0; j < 1; j++) {
+//         result += '|';
+//     }
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     result += "\n";
+// }
+// console.log(result);
+// //10 задача на функции
+// // Место для первой задачи
+// function sayHello(name) {
+//     return "Привет, " + name + "!";
+// }
+// // Место для второй задачи
+// function returnNeighboringNumbers(number) {
+//     return [number - 1, number, number + 1];
+// }
+// console.log(returnNeighboringNumbers(5));
+// // Место для третьей задачи
+// function getMathResult(numberOne, numberTwo) {
+//     let stringus = numberOne;
+//     if (typeof numberTwo === "string" || numberTwo <= 0) {
+//         return numberOne;
+//     }
+
+//     else {
+//         for (let i = 2;i <= numberTwo;i++){
+//             stringus = stringus + "---" +(numberOne * i);
+//         }
+//         return stringus;
+//     }
+
+// }
+// console.log(getMathResult(5,4));
+// //5---10---15---20 (5,4)
