@@ -470,3 +470,102 @@
 // }
 
 // writeYourGenres();
+
+// // Место для первой задачи
+// function calculateVolumeAndArea(number) {
+//     if (typeof(number) !== "number" || number <= 0 || number%1 !== 0){
+//         return `При вычислении произошла ошибка`;
+//     }
+//     return `Объем куба: ${number*number*number}, площадь всей поверхности: ${number*number*6}` ;
+// }
+
+// console.log(calculateVolumeAndArea(5.5));
+
+// // Место для второй задачи
+// function getCoupeNumber(number) {
+//     if (number < 0 || typeof(number) !==`number` || number%1 !==0){
+//         return `Ошибка.Проверьте правильность введенного номера места`;
+//     }
+//     else if (number > 36 || number <= 0) {
+//         return `Таких мест в вагоне не существует`;
+//     }
+//     else {
+//         return Math.ceil((number/4));
+//     }
+// }
+
+// console.log(getCoupeNumber(0));
+
+
+
+// // Место для третьей задачи
+// function getTimeFromMinutes(minutes) {
+//     if (minutes%1 === 0){
+//         if (Math.floor(minutes/60) === 0){
+//             return `Это ${Math.floor(minutes/60)} часов и ${minutes%60} минут`;
+//             }
+//         else if (Math.floor(minutes/60) === 1) {
+//             return `Это ${Math.floor(minutes/60)} час и ${minutes%60} минут`;
+//             }
+//         else if (Math.floor(minutes/60) === 4 || Math.floor(minutes/60) === 3 || Math.floor(minutes/60) === 2 ) {
+//             return `Это ${Math.floor(minutes/60)} часа и ${minutes%60} минут`;
+//             }
+//         else if (Math.floor(minutes/60) > 5) {
+//             return `Это ${Math.floor(minutes/60)} часов и ${minutes%60} минут`;
+//         }
+//         else {
+//             return `Ошибка, проверьте данные`;
+//         }
+//     }
+//     else{
+//         return `Ошибка, проверьте данные`;
+//     }
+// }
+
+// console.log(getTimeFromMinutes(50.5));
+
+
+
+// // Место для четвертой задачи
+// let arr = [];
+// let maxNumber = 0;
+
+// function findMaxNumber(a, b, c, d) {
+//     if (typeof (a) != `number` || typeof (b) != `number` || typeof (c) != `number` || typeof (d) != `number`) {
+//         return 0;
+//     }
+
+//     arr = [a, b, c, d];
+
+//     for (let i = 0; i <= arr.length - 1; i++) {
+//         if (maxNumber < arr[i]){
+//             maxNumber = arr[i];
+//         }
+//         else{
+//             maxNumber = maxNumber;
+//         }
+//         console.log(maxNumber);
+//     }
+
+//     return maxNumber;
+// }
+
+// console.log(findMaxNumber(100, 51, 677.677777777, 500));
+
+
+// Место для босс-задачи
+function fib(number) {
+    if (number <= 0 || typeof(number)!=`number` || number%1 !== 0){
+        return '';
+    }
+    if (number === 1){
+    return `0`;
+    }
+    let arrFib=[0,1];
+for (let i=2;i<number;i++){
+    arrFib[i] = arrFib[i-1] + arrFib[i-2];
+}
+return arrFib.join(' ');
+}
+
+console.log(fib(1));
